@@ -2,17 +2,29 @@ import React from 'react';
 import '../stylesheets/ui.scss';
 
 export const PerDayCount = React.createClass({
+    percentToDecimal(decimal){
+        return ((decimal * 100) + '%');
+    },
+    calcGoalProgress(total, goal){
+        return this.percentToDecimal(total/goal);
+    },
     render() {
         return (
             <div className="per-day-count">
                 <div className="total-days">
-                    <span>5 days</span>
+                    <span>{this.props.total}</span>
+                    <span>days</span>
                 </div>
                 <div className="coffee-days">
-                    <span>2 days</span>
+                    <span>{this.props.coffee}</span>
+                    <span>days</span>
                 </div>
                 <div className="exercise-days">
-                    <span>1 exercise day</span>
+                    <span>{this.props.exercise}</span>
+                    <span>days</span>
+                </div>
+                <div>
+                    <span>{this.calcGoalProgress(this.props.total, this.props.goal)}</span>
                 </div>
             </div>
         )
