@@ -1,8 +1,8 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
+import { PerDayCount } from './PerDayCount';
 
 render( 
-    <div>
-    </div>,
+    <PerDayCount />,
     document.getElementById('react-container')
 )

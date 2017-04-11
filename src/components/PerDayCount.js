@@ -1,7 +1,7 @@
 import React from 'react';
 import '../stylesheets/ui.scss';
 
-const PerDayCount = React.createClass({
+export const PerDayCount = React.createClass({
     render() {
         return (
             <div className="per-day-count">
