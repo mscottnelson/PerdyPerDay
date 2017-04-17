@@ -21,25 +21,25 @@ export const PerDayCount = ({total, coffee, exercise, cake, beer, weight, goal})
             <Calendar />
             <span>days</span>
         </div>
-        <div className="coffee-days">
+        <div className="coffee-units">
             <span>{coffee}</span>
             <Coffee />
-            <span>days</span>
+            <span>units</span>
         </div>
-        <div className="exercise-days">
+        <div className="exercise-units">
             <span>{exercise}</span>
             <Exercise />
-            <span>days</span>
+            <span>units</span>
         </div>
-        <div className="cake-days">
+        <div className="cake-units">
             <span>{cake}</span>
-            <Beer />
+            <Cake />
             <span>days</span>
         </div>
-        <div className="beer-days">
+        <div className="beer-units">
             <span>{beer}</span>
             <Beer />
-            <span>days</span>
+            <span>units</span>
         </div>
         <div className="current-weight">
             <span>{weight}</span>
