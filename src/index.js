@@ -9,21 +9,30 @@ render(
         [
            {
                place: "Home",
-               date: new Data("1/1/2017"),
+               date: new Date("1/1/2017"),
                coffee: 1,
-               exercise: 0
+               exercise: 0,
+               cake: 0,
+               beer: 0,
+               weight: 180
            },
            {
                place: "Home",
-               date: new Data("1/2/2017"),
+               date: new Date("1/2/2017"),
                coffee: 1,
-               cake: 1
+               exercise: 0,
+               cake: 1,
+               beer: 0,
+               weight: 180
            },
            {
                place: "Work",
-               date: new Data("1/3/2017"),
+               date: new Date("1/3/2017"),
                coffee: 3,
-               exercise: 0
+               exercise: 0,
+               cake: 3,
+               beer: 0,
+               weight: 180
            },
         ]
     } />,

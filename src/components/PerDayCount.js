@@ -14,7 +14,7 @@ const calcGoalProgress = (total, goal) =>{
         return percentToDecimal(total/goal);
 }
 
-export const PerDayCount = ({total, coffee, exercise, cake, beer, weight, goal}) => (
+export const PerDayCount = ({total=100, coffee=90, exercise=10, cake=30, beer=30, weight=190, goal=90}) => (
     <div className="per-day-count">
         <div className="total-days">
             <span>{total}</span>
