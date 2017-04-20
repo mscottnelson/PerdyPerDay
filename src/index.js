@@ -1,9 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { PerDayList } from './components/PerDayList';
+import { PerDayCount } from './components/PerDayCount';
 
 window.React = React;
 
+render(
+    <PerDayCount />,
+    document.getElementById('react-container')
+)
+/*
 render( 
     <PerDayList days={
         [
@@ -38,3 +44,4 @@ render(
     } />,
     document.getElementById('react-container')
 )
+*/
