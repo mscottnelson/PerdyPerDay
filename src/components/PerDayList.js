@@ -5,6 +5,7 @@ import Beer from 'react-icons/lib/fa/beer';
 import Weight from 'react-icons/lib/fa/balance-scale';
 import Calendar from 'react-icons/lib/fa/calendar';
 import { PerDayRow } from './PerDayRow';
+import { PropTypes } from 'react';
 
 export const PerDayList = ({days}) => (
     <table>
@@ -27,3 +28,16 @@ export const PerDayList = ({days}) => (
         </tbody>
     </table>
 )
+
+PerDayList.propTypes = {
+    days: function(props){
+        if(!Array.isArray(props.days)){
+            return new Error("PerDayList should be an array");
+        }else if(!props.days.length){
+                return new Error("PerDayList must have at least one record");
+        } else {
+                return null;
+        }
+    }
+}
+

@@ -4,6 +4,7 @@ import Cake from 'react-icons/lib/fa/birthday-cake';
 import Beer from 'react-icons/lib/fa/beer';
 import Weight from 'react-icons/lib/fa/balance-scale';
 import Calendar from 'react-icons/lib/fa/calendar';
+import { PropTypes } from 'react';
 
 export const PerDayRow = ({place, date, coffee, exercise, cake, beer, weight}) => (
     <tr>
@@ -30,3 +31,10 @@ export const PerDayRow = ({place, date, coffee, exercise, cake, beer, weight}) =
         </td>
     </tr>
 )
+
+PerDayRow.propTypes = {
+    place: PropTypes.string.isRequired,
+    date: PropTypes.instanceOf(Date).isRequired,
+    coffee: PropTypes.number,
+    exercise: PropTypes.number
+}

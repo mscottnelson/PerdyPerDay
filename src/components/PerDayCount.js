@@ -69,5 +69,6 @@ PerDayCount.propTypes = {
     exercise: PropTypes.number,
     cake: PropTypes.number,
     beer: PropTypes.number,
-    weight: PropTypes.number 
+    weight: PropTypes.number,
+    goal: PropTypes.number
 }
