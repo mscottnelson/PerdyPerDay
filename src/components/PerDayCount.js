@@ -1,3 +1,4 @@
+import { PropTypes } from 'react';
 import '../stylesheets/ui.scss';
 import Coffee from 'react-icons/lib/fa/coffee';
 import Exercise from 'react-icons/lib/fa/bicycle';
@@ -60,4 +61,13 @@ PerDayCount.defaultProps = {
     beer: 30, 
     weight: 190, 
     goal: 170
+}
+
+PerDayCount.propTypes = {
+    total: PropTypes.number,
+    coffee: PropTypes.number,
+    exercise: PropTypes.number,
+    cake: PropTypes.number,
+    beer: PropTypes.number,
+    weight: PropTypes.number 
 }
