@@ -1,4 +1,6 @@
 import { createClass } from 'react';
+import { PerDayList } from './PerDayList';
+import { PerDayCount } from './PerDayCount';
 
 export const App = createClass({
   getInitialState(){
@@ -34,10 +36,17 @@ export const App = createClass({
       ]
     }
   },
+  countDays(filter) {
+    const { allPerDays } = this.state;
+    return allPerDays.filter((day) => (filter) ? day[filter] : day).length;
+  },
   render() {
     return(
       <div className="app">
-        {this.state.allPerDays[0]["place"]}
+        <PerDayList days={this.state.allPerDays}/>
+        <PerDayCount total={this.countDays()}
+                      cofee={this.countDays("coffee")}
+                    exercise={this.countDays("exercise")}/>
       </div>
     )
   }
