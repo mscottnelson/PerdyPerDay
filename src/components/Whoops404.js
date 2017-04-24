@@ -1,4 +1,5 @@
-export const Whoops404 = () =>
+export const Whoops404 = ({ location }) => (
   <div>
-    <h1>Whoops, route not found.</h1>
+    <h3>Whoops, <code>{location.pathname}</code> not found.</h3>
   </div>
+)
