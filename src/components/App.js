@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import { PerDayList } from './PerDayList';
 import { PerDayCount } from './PerDayCount';
 import { AddDayForm } from './AddDayForm';
-import { Menu } from './Menu'
+import { Menu } from './Menu';
 
 export class App extends Component {
   constructor(props){
-    console.log("go");
     super(props);
     this.state = {
       allPerDays: [
@@ -82,5 +81,4 @@ export class App extends Component {
       			</div>
     )
   }
-
 }
