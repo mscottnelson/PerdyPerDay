@@ -1,12 +1,12 @@
-import Coffee from 'react-icons/lib/fa/coffee'
-import Exercise from 'react-icons/lib/fa/bicycle'
-import Cake from 'react-icons/lib/fa/birthday-cake'
-import Beer from 'react-icons/lib/fa/beer'
-import Weight from 'react-icons/lib/fa/balance-scale'
-import Calendar from 'react-icons/lib/fa/calendar'
-import { PerDayRow } from './PerDayRow'
-import { PropTypes } from 'prop-types'
-import { Link } from 'react-router'
+import Coffee from 'react-icons/lib/fa/coffee';
+import Exercise from 'react-icons/lib/fa/bicycle';
+import Cake from 'react-icons/lib/fa/birthday-cake';
+import Beer from 'react-icons/lib/fa/beer';
+import Weight from 'react-icons/lib/fa/balance-scale';
+import Calendar from 'react-icons/lib/fa/calendar';
+import { PerDayRow } from './PerDayRow';
+import { PropTypes } from 'prop-types';
+import { Link } from 'react-router';
 
 export const PerDayList = ({days, filter}) => {
   const filteredDays = (!filter || !filter.match(/coffee|exercise|cake|beer/)) ?
