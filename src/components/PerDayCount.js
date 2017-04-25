@@ -1,4 +1,4 @@
-import { PropTypes } from 'react';
+import { PropTypes } from 'prop-types';
 import '../stylesheets/ui.scss';
 import Coffee from 'react-icons/lib/fa/coffee';
 import Exercise from 'react-icons/lib/fa/bicycle';
@@ -54,12 +54,12 @@ export const PerDayCount = ({total, coffee, exercise, cake, beer, weight, goal})
 )
 
 PerDayCount.defaultProps = {
-    total: 100, 
-    coffee:90, 
-    exercise:10, 
-    cake: 30, 
-    beer: 30, 
-    weight: 190, 
+    total: 100,
+    coffee:90,
+    exercise:10,
+    cake: 30,
+    beer: 30,
+    weight: 190,
     goal: 170
 }
 
